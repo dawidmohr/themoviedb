@@ -10,7 +10,7 @@ test('renders input', () => {
 
 test('renders header', () => {
     render(<MovieSearcher />);
-    const headerElement = screen.getByRole('heading', { name: /wyszukiwarka filmów/i });
+    const headerElement = screen.getByRole('heading', { name: /wyszukaj film/i });
 
     expect(headerElement).toBeInTheDocument('');
 });

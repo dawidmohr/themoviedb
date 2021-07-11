@@ -1,11 +1,9 @@
 
 const PageHeader = ({ children, ...props }) => {
-  return (<>
-    <div>
-      <h1 {...props}>
-        {children}
-      </h1>
-    </div>
-  </>)
+  return (
+    <h1 {...props}>
+      {children}
+    </h1>
+  )
 }
 export default PageHeader;
