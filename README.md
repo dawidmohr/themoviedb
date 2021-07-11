@@ -1,3 +1,7 @@
+# Getting API key from themoviedb
+You must get an api key from https://www.themoviedb.org/documentation/api
+If you do, save it in 'src/APIconfig.js', you should be able to find right place.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
