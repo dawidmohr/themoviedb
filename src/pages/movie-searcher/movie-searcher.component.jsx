@@ -1,10 +1,11 @@
-import { useState } from "react";
+import { useState } from 'react';
 
-import { SearcherModel } from "../../models/searcherModel.model";
+import { SearcherModel } from '../../models/searcherModel.model';
 import { searchMovie } from '../../api/movie-searcher.api';
 
-import PageHeader from "../../components/page-header/page-header.component";
-import Input from "../../components/input/input.component";
+import PageHeader from '../../components/page-header/page-header.component';
+import Input from '../../components/input/input.component';
+import ListElement from '../../components/list-element/list-element.component';
 
 const MovieSearcher = () => {
   const [formData, setFormData] = useState(new SearcherModel({}));
@@ -28,7 +29,7 @@ const MovieSearcher = () => {
             placeholder="Wpisz tekst, aby wyszukać film..."
           />
           {moviesData.map((item) => (
-            <div>{item.title}</div>
+            <ListElement>{item.title}</ListElement>
           ))}
         </div>
       </div>
