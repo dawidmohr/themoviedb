@@ -46,7 +46,7 @@ const MovieSearcher = () => {
       [field]: value,
     }));
 
-    searchForMovies(value)
+    searchForMovies(value);
   }
 
   function searchForMovies(value) {
@@ -64,7 +64,7 @@ const MovieSearcher = () => {
     const timeout = setTimeout(() => {
       searchMovie(value).then((data) => {
         setSearcherTimeout(null);
-        setMoviesData(data?.results || [])
+        setMoviesData(data?.results || []);
       });
     }, 600);
 

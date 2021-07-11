@@ -6,4 +6,5 @@ const PageHeader = ({ children, ...props }) => {
     </h1>
   )
 }
+
 export default PageHeader;

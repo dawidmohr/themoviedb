@@ -1,4 +1,5 @@
 # Getting API key from themoviedb
+
 You must get an api key from https://www.themoviedb.org/documentation/api
 If you do, save it in 'src/APIconfig.js', you should be able to find right place.
 

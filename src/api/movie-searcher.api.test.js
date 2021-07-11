@@ -11,7 +11,7 @@ const server = setupServer(
         async (req, res, ctx) => {
             return res(ctx.delay(delay), ctx.json('ok'));
         },
-    )
+    ),
 )
 
 beforeAll(() => server.listen());
