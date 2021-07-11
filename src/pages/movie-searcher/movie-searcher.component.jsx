@@ -29,7 +29,7 @@ const MovieSearcher = () => {
             placeholder="Wpisz tekst, aby wyszukać film..."
           />
           {moviesData.map((item) => (
-            <ListElement>{item.title}</ListElement>
+            <ListElement key={item.id}>{item.title} <small className="text-muted">{item.original_title}</small></ListElement>
           ))}
         </div>
       </div>
@@ -49,14 +49,20 @@ const MovieSearcher = () => {
     searchForMovies(value)
   }
 
-  function searchForMovies() {
+  function searchForMovies(value) {
     if (searcherTimeout) {
       clearTimeout(searcherTimeout);
       setSearcherTimeout(null);
     }
 
+    if (value === '') {
+      setMoviesData([]);
+
+      return null;
+    }
+
     const timeout = setTimeout(() => {
-      searchMovie(formData.searcher).then((data) => {
+      searchMovie(value).then((data) => {
         setSearcherTimeout(null);
         setMoviesData(data?.results || [])
       });
