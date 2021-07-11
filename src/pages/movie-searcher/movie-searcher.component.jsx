@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import { SearcherModel } from "../../models/searcherModel.model";
 
-import PageHeader from "../../components/headings/page-header.component";
+import PageHeader from "../../components/page-header/page-header.component";
 
 const MovieSearcher = () => {
     const [formData, setFormData] = useState(new SearcherModel({}));
