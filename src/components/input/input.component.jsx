@@ -29,7 +29,6 @@ const Input = ({
   </>
 
   /**
-   * 
    * @param {event} e 
    */
   function onChangeInput(e) {
