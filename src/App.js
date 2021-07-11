@@ -1,5 +1,5 @@
 import MovieSearcher from './pages/movie-searcher/movie-searcher.component';
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
